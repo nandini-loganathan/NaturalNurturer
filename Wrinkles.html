@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/remedies.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
+    <title>Wrinkles Remedies</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar_container">
+            <div class="navbar_logo">
+                <img src="logo/logo black text.png" alt="loading" class="log_img">
+            </div>
+        </div>
+    </nav>
+    <!--venues page-->
+    <div class="page_container">
+    <div class="remedies-heading">
+        <h2>Remedies</h2>
+    </div>
+    <div class="cards_container">
+        <div class="remedies-card" onclick="togglePopup('1')">
+            <img src="images/berry smoothie.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Berry Smoothie</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>berries, banana, yogurt</p>
+                <p>tablespoon chia seeds</p>
+                <p>almond milk</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('2')">
+            <img src="images/salmon salad.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Salmon Salad</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>salmon fillet,Cherry tomatoes</p>
+                <p>Mixed green, avocado<p>
+                <p>Olive oil and lemon juice</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('3')">
+            <img src="images/quinoa.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Quinoa and Veg. Fry</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>quinoa, bellpeppers</p>
+                <p>carrots, Tofu/chicken</p>
+                <p>soysauce, broccoli</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('4')">
+            <img src="images/spinach tomato .jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Spinach & Tomato Omelette</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>Eggs,spinach</p>
+                <p>Oliveoil, tomatoes</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('5')">
+            <img src="images/avacado & egg.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe1-name">
+                    <h3 class="recipe1-name">Avocado Toast with Eggs</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>Whole-grain,eggs</p>
+                <p>Ripe avocado</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('6')">
+            <img src="images/greentea.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Turmeric and Lemon Face Mask</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>yogurt,turmeric powder<p>
+                <p>lemon juice</p>
+
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!--Details popup-->
+    <div class="wrapper popup_1" id="popup-1">
+        <span class="icon-close" onclick="togglePopup('1')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-1 fade">
+                            <img src="images/berry smoothie.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Berry Smoothie</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1 cup mixed berries (blueberries, strawberries, raspberries)</p>
+                            <p>banana</p>
+                            <p>1/2 cup Greek yogurt</p>
+                            <p>1 tablespoon chia seeds</p>
+                            <p>1/2 cup almond milk</p>
+                            <h>Instructions</h1>
+                            <p>1. Blend all the ingredients until smooth</p>
+                            <p>2. Enjoy this antioxidant-rich smoothie that's packed with vitamins, fiber, and healthy fats.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-2">
+        <span class="icon-close" onclick="togglePopup('2')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-2 fade">
+                            <img src="images/salmon salad.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Salmon Salad</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>Grilled or baked salmon fillet</p>
+                            <p>Mixed greens (spinach, kale, arugula)</p>
+                            <p>Sliced avocado,Cherry tomatoes</p>
+                            <p>Olive oil and lemon juice dressing</p>
+                            <h1>Instructions</h1>
+                            <p>1. Arrange the greens, avocado, tomatoes, and salmon on a plate</p>
+                            <p>2. Drizzle with olive oil and lemon juice for a dose of omega-3 fatty acids and vitamins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-3">
+        <span class="icon-close" onclick="togglePopup('3')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-3 fade">
+                            <img src="images/quinoa.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Quinoa and Vegetable Stir-Fry</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>Cooked quinoa</p>
+                            <p>Assorted colorful vegetables (bell peppers, broccoli, carrots)</p>
+                            <p>Tofu or lean chicken breast</p>
+                            <p>Low-sodium soy sauce or teriyaki sauce</p>
+                            <h1>Instructions</h1>
+                            <p>1. Stir-fry the vegetables and protein source with a little sauce</p>
+                            <p>2. Serve over quinoa for a meal rich in protein, fiber, and vitamins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-4">
+        <span class="icon-close" onclick="togglePopup('4')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-4 fade">
+                            <img src="images/vitamin c.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Spinach and Tomato Omelette</h3>
+                        </div>
+                        <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>Eggs</p>
+                            <p>Handful of spinach</p>
+                            <p>Sliced tomatoes</p>
+                            <p>Feta cheese (optional)</p>
+                            <p>Olive oil for cooking</p>
+                            <h1>Instructions</h1>
+                            <p>1. Whisk eggs and cook them with spinach and sliced tomatoes</p>
+                            <p>2. Add feta cheese if desired and cook until set</p>
+                            <p>3. Eggs provide protein, while spinach and tomatoes contribute vitamins and antioxidants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-5">
+        <span class="icon-close" onclick="togglePopup('5')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-5 fade">
+                            <img src="images/" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Avocado Toast with Eggs</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>Whole-grain toast</p>
+                            <p>Ripe avocado, mashed</p>
+                            <p>Poached or fried egg</p>
+                            <p>Red pepper flakes (optional)</p>
+                            <h1>Instructions</h1>
+                            <p>1. Spread mashed avocado on the toast</p>
+                            <p>2. Top with a poached or fried egg and a sprinkle of red pepper flakes</p>
+                            <p>3. Avocado offers healthy fats and vitamins, while eggs provide protein</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-6">
+        <span class="icon-close" onclick="togglePopup('6')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-6 fade">
+                            <img src="images/tumeric lemon.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Brightening Turmeric and Lemon Face Mask</h3>
+                        </div>
+                        <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1 teaspoon turmeric powder</p>
+                            <p>1 tablespoon yogurt</p>
+                            <p>Few drops of lemon juice</p>
+                            <h1>Instructions</h1>
+                            <p>1. Mix the turmeric, yogurt, and lemon juice to form a paste</p>
+                            <p>2. Apply the mask to your face and leave it on for 10-15 minutes</p>
+                            <p>3. Rinse off with cool water</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cal.js"></script>
+</body>
+</html>

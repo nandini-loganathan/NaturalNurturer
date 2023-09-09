@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/remedies.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
+    <title>gumbleeding Remedies</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar_container">
+            <div class="navbar_logo">
+                <img src="logo/logo black text.png" alt="loading" class="log_img">
+            </div>
+        </div>
+    </nav>
+
+    <div class="page_container">
+    <div class="remedies-heading">
+        <h2>Remedies</h2>
+    </div>
+    <div class="cards_container">
+        <div class="remedies-card" onclick="togglePopup('1')">
+            <img src="images/salt.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Salt Water Gargle</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>Teaspoon salt<p>
+                <p>1 cup warm water</p>
+
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('2')">
+            <img src="images/turmeric.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Turmeric Mask</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>Turmeric powder</p>
+                <p>Water<p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('3')">
+            <img src="images/oil pulling.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Oil Pulling</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>Coconut oil</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('4')">
+            <img src="images/vitamin c.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Vitamin C Diet</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>Foods high in vitamin C<p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('5')">
+            <img src="images/aleovera.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Aloevera Massage</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>Pure aloevera gel<p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('6')">
+            <img src="images/greentea.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Green Tea</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>green tea bag<p>
+                <p>cup hot water<p>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!--Details popup-->
+    <div class="wrapper popup_1" id="popup-1">
+        <span class="icon-close" onclick="togglePopup('1')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-1 fade">
+                            <img src="images/salt.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Salt Water Gargle</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1/2 teaspoon salt</p>
+                            <p>1 cup warm water</p>
+                            <h1>Instructions</h1>
+                            <p>1. Dissolve the salt in warm water</p>
+                            <p>2. Rinse your mouth with the saltwater solution for about 30 seconds</p>
+                            <p>3. Spit out the solution</p>
+                            <p>4. Repeat 2-3 times a day</p> 
+                            <p>Choose the remedies as per the available ingredients & as per your choices/alleriges</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-2">
+        <span class="icon-close" onclick="togglePopup('2')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-2 fade">
+                            <img src="images/turmeric.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Turmeric Mask</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1/4 teaspoon turmeric powder</p>
+                            <p>Water</p>
+                            <h1>Instructions</h1>
+                            <p>1. Mix turmeric powder with a small amount of water to create a paste.</p>
+                            <p> 2. Apply the paste to your gums</p>
+                            <p>3. Leave it on for a few minutes</p>   
+                            <p> 4. Gently rinse your mouth with water</p>
+                            <p> 5. Use this remedy 2-3 times a week</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-3">
+        <span class="icon-close" onclick="togglePopup('3')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-3 fade">
+                            <img src="images/oil pulling.jpeg" style="width: 100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides3(-1)">&#10094</a>
+                        <a class="next" onclick="plusSlides3(1)">&#10095</a>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Oil Pulling</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1 tablespoon coconut oil</p>
+                            <h1>Instructions</h1>
+                            <p>1.Take a tablespoon of coconut oil and swish it in your mouth for about 15 minutes</p>
+                            <p>2.Spit out the oil</p>
+                            <p>3.Rinse your mouth with warm water</p>
+                            <p>4.Perform oil pulling once daily in the morning before brushing your teeth</p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-4">
+        <span class="icon-close" onclick="togglePopup('4')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-4 fade">
+                            <img src="images/vitamin c.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Vitamin C</h3>
+                        </div>
+                        <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>Foods high in vitamin C</p>
+                            <h1>Instructions</h1>
+                            <p>1.Incorporate vitamin C-rich foods into your diet</p>
+                            <p>2.Consume these foods regularly to support gum health and healing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-5">
+        <span class="icon-close" onclick="togglePopup('5')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-5 fade">
+                            <img src="images/aleovera.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Aloevera Massage</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>Pure aloe vera gel (from the leaf or store-bought)<p>
+                            <h1>Instructions</h1>
+                            <p>1.Take a small amount of pure aloe vera gel</p>
+                            <p>2. Gently massage the gel onto your gums</p>
+                            <p>3. Leave it on for a few minutes</p>
+                            <p>4. Rinse your mouth with water</p>
+                            <p>5. Use this remedy 1-2 times a day</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-6">
+        <span class="icon-close" onclick="togglePopup('6')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-6 fade">
+                            <img src="images/greentea.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Green Tea</h3>
+                        </div>
+                        <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>inch fresh ginger root (sliced or grated)</p>
+                            <p>Honey (optional, for taste)</p>
+                            <h1>Instructions</h1>
+                            <p>1.Place the ginger slices or grated ginger in a cup</p>
+                            <p>2.Pour hot water over the ginger</p>
+                            <p>3.Cover and steep for 10 minutes</p>
+                            <p>4.Remove the ginger or strain the tea</p>
+                            <p>5.Add honey if desired</p>
+                            <p>6.Sip the ginger tea</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cal.js"></script>
+</body>
+</html>

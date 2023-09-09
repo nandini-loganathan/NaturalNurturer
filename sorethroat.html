@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/remedies.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
+    <title>Wrinkles Remedies</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar_container">
+            <div class="navbar_logo">
+                <img src="logo/logo black text.png" alt="loading" class="log_img">
+            </div>
+        </div>
+    </nav>
+    <div class="page_container">
+        <div class="remedies-heading">
+            <h2>Remedies</h2>
+        </div>
+    <div class="cards_container">
+        <div class="remedies-card" onclick="togglePopup('1')">
+            <img src="images/ginger&lemontea.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Honey Lemon Ginger tea</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>honey, lemon</p>
+                <p>grated ginger</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('2')">
+            <img src="images/fenugreek .jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Fenugreek Tea</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>fenugreek seeds</p>
+                <p>honey</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('3')">
+            <img src="images/chamomile.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Chamomile and Peppermint Tea</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>chamomile, peppermint tea bag</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('4')">
+            <img src="images/garlic honey tea.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Garlic Honey Remedy</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>2-3 cloves of garlic</p>
+                <p>1/4 cup of honey</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('5')">
+            <img src="images/salt.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe1-name">
+                    <h3 class="hall-name">Saltwater Gargle</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>1/2 teaspoon salt<p>
+                <p> 1 cup warm water</p>
+            </div>
+        </div>
+        <div class="remedies-card" onclick="togglePopup('6')">
+            <img src="images/chicken.jpeg" alt="" class="card_img">
+            <div class="card_content">
+                <div class="recipe-name">
+                    <h3 class="recipe1-name">Chicken and Veg Soup</h3>
+                </div>
+                <h1>Ingredients</h1>
+                <p>shredded chicken, paper<p>
+                <p>vegetables, salt<p>
+                <p>clove garlic,minced</p>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!--Details popup-->
+    <div class="wrapper popup_1" id="popup-1">
+        <span class="icon-close" onclick="togglePopup('1')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-1 fade">
+                            <img src="images/salt.jpeg" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-1 fade">
+                            <img src="images/salt.jpeg" style="width: 100%">
+                        </div>
+                        <div class="mySlides slider-1 fade">
+                            <img src="images/salt.jpeg" style="width: 100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides1(-1)">&#10094</a>
+                        <a class="next" onclick="plusSlides1(1)">&#10095</a>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Honey Lemon Ginger Tea</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1 tablespoon of honey</p>
+                            <p>1 cup of water</p>
+                            <p>Juice of half a lemon</p>
+                            <p>1 teaspoon of freshly grated ginger (or a slice of ginger)</p>
+                            <h1>Instructions</h1>
+                            <p>1. Boil the water and let it cool slightly</p>
+                            <p>2. Add the honey, lemon juice, and grated ginger to the water.</p>
+                            <p>3. Stir well until the honey is dissolved.</p>
+                            <p>4.  Sip on the warm honey lemon ginger tea slowly to soothe your sore throat.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-2">
+        <span class="icon-close" onclick="togglePopup('2')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-2 fade">
+                            <img src="images/turmeric.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="recipe-name">
+                            <h3 class="recipe1-name">Fenugreek Tea</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1 teaspoon of fenugreek seeds</p>
+                            <p>1 cup of water</p>
+                            <p>1 teaspoon of honey (optional)</p>
+                            <h1>Instructions</h1>
+                            <p>1. Boil the water and add the fenugreek seeds.</p>
+                            <p>2. Let the seeds simmer for about 5-10 minutes.</p>
+                            <p>3. Strain the tea into a cup.</p>   
+                            <p>4. Add honey if desired for sweetness and added soothing properties.</p>
+                            <p>5. Sip on the warm fenugreek tea slowly to relieve your sore throat.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-3">
+        <span class="icon-close" onclick="togglePopup('3')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-3 fade">
+                            <img src="images/oil pulling.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="recipe-name">
+                            <h3 class="recipe1-name">Chamomile Peppermint Tea</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1 chamomile tea bag </p>
+                            <p>1 peppermint tea bag</p>
+                            <p>1 cup of hot water</p>
+                            <p>1 tablespoon of honey (optional)</p>
+                            <h1>Instructions</h1>
+                            <p>1. Place the chamomile and peppermint tea bags in a cup & Pour hot water over the tea</p>
+                            <p>2. Let the tea steep for about 5-7 minutes.</p>
+                            <p>4. Remove the tea bags and add honey if desired</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-4">
+        <span class="icon-close" onclick="togglePopup('4')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-4 fade">
+                            <img src="images/vitamin c.jpeg" style="width: 100%">
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="recipe-name">
+                            <h3 class="recipe1-name">Garlic Honey Remedy</h3>
+                        </div>
+                        <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p> 2-3 cloves of garlic</p>
+                            <p>1/4 cup of honey</p>
+                            <h1>Instructions</h1>
+                            <p>1. Peel and crush the garlic cloves.</p>
+                            <p>2. Place the crushed garlic in a clean, dry glass jar.</p>
+                            <p>3. Pour honey over the garlic until it's fully covered.</p>
+                            <p>4. Seal the jar and let it sit for a day or two to allow the flavors to infuse.</p>
+                            <p>5. Take a teaspoon of the garlic-infused honey as needed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-5">
+        <span class="icon-close" onclick="togglePopup('5')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-5 fade">
+                            <img src="images/aleovera.jpeg" style="width: 100%">
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Saltwater Gargle</h3>
+                        </div>
+                         <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1/2 teaspoon salt<p>
+                            <p>1 cup warm water</p>
+                            <h1>Instructions</h1>    
+                            <p>1. Mix 1/2 teaspoon of salt in a glass of warm water.</p>
+                            <p>2. Gargle with the mixture for 15-30 seconds.</p>
+                            <p>3. Spit out the water, but do not swallow it.</p>
+                            <p>4. Repeat several times a day.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="wrapper" id="popup-6">
+        <span class="icon-close" onclick="togglePopup('6')">
+            X
+        </span>
+            <div class="info-container">
+                <div class="popup-remedies-details">
+                    <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides slider-6 fade">
+                            <img src="images/greentea.jpeg" style="width: 100%">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="remedies-info">
+                        <div class="hall-rating">
+                            <h3 class="recipe1-name">Green Tea</h3>
+                        </div>
+                        <div class="information-container">
+                            <h1>Ingredients</h1>
+                            <p>1 cup shredded chicken<p>
+                            <p>1 cup mixed vegetables<p>
+                            <p>1 clove garlic,minced</p>
+                            <p>Salt and pepper,turmeric</p>
+                            <h1>Instructions</h1>
+                            <p>1. Saute the minced garlic in a little oil until fragrant.</p>
+                            <p>2. Add the mixed vegetables and cook until they start to soften.</p>
+                            <p>3. Add the shredded chicken and turmeric to the pot.</p>
+                            <p>4. Simmer for about 10-15 minutes, until the flavors meld together.</p>
+                            <p>5. Season with salt and pepper to taste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cal.js"></script>
+</body>
+</html>
